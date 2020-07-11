@@ -182,6 +182,28 @@ function NetworkBall({ filled, size }) {
   );
 }
 
+function Layout({ children }) {
+  return <div>{children}</div>;
+}
+
+function PieceOfLayout({ children }) {
+  return <div>{children}</div>;
+}
+
+function BigLayout() {
+  return (
+    <Layout>
+      <PieceOfLayout>toto</PieceOfLayout>
+      <PieceOfLayout>toto</PieceOfLayout>
+      <PieceOfLayout>toto</PieceOfLayout>
+    </Layout>
+  );
+}
+
+function MyApp() {
+  return;
+}
+
 function Network() {
   return (
     <div
